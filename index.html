@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>wau-iview</title>
+    <script type="text/javascript" src="//mat1.gtimg.com/auto/2017/wii/loader/js-yaml.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+    	<app :data="data"></app>
+    </div>
+    <script type="text/javascript">
+	  	window.wau = {};
+	  	// window.wau = {"wau_header":{"menus":[{"id":"list","model":"link","content":"列表页","href":"/list","icon":"navicon"},{"id":"form","model":"link","content":"表单页","href":"/form","icon":"compose"}]},"data":{"menus":[{"id":"list","model":"link","content":"列表页","href":"/list","icon":"navicon"},{"id":"form","model":"link","content":"表单页","href":"/form","icon":"compose"}],"nav_1":"列表页","nav_2":{"name":"表单页","icon":"compose"}}};
+
+			;(function() {
+		    var pathname = location.pathname;
+		    if (!pathname || pathname === '/') {
+		      pathname = '/index';
+		    }
+
+		    window.wauConfig = {
+		      host: '',
+		      method: 'GET',
+		      mode: 'yml', // ajax, yml, json
+		      url: '/static/yml' + pathname + '.yml',
+		      // json: wau
+		    };
+			})();
+	  </script>
+    <!-- built files will be auto injected -->
+  </body>
+  
+</html>

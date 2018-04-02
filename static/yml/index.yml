@@ -1,0 +1,30 @@
+wau_header:
+  menus: 
+    - id: list
+      model: link
+      content: '{%nav_1%}'
+      href: '/list'
+      icon: navicon
+    - id: form
+      model: link
+      content: '{%nav_2.name%}'
+      href: '/form'
+      icon: '{%nav_2.icon%}'
+
+
+data:
+  menus:
+    - id: list
+      model: link
+      content: 列表页
+      href: '/list'
+      icon: navicon
+    - id: form
+      model: link
+      content: 表单页
+      href: '/form'
+      icon: compose
+  nav_1: '列表页'
+  nav_2: 
+    name: '表单页'
+    icon: 'compose'
